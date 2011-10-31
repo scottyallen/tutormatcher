@@ -1,0 +1,6 @@
+ErrorDocument 401 "Unauthorized Access"
+RewriteEngine off
+AuthType Basic
+AuthName "Tutoring Admin Area"
+AuthUserFile "/home/scottya/.htpasswds/tutoring/admin/passwd"
+require valid-user

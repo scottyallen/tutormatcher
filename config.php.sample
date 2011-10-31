@@ -1,0 +1,27 @@
+<?
+global
+$periods,$days,$periodNames,$dayNames,$coordinatorName,$coordinatorEmail,coordinatorPhone,$domainPath,$quick_match_call_time,$unresponded_match_call_time;
+$periods=array(1,2,3,4,6,7,8);
+$days=array(1,2,3,4);
+
+$periodNames = array(0,1,2,3,4,5,6,7,'After school');
+$dayNames = array('','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
+
+define(DB_HOST,'localhost');
+define(DB_NAME,'tutor');
+define(DB_USER,'tutor');
+define(DB_PASS,'tutor');
+
+$coordinatorName = "Jane Smith";
+$coordinatorEmail = "jane@example.com";
+$coordinatorPhone = "111-111-1111";
+$domainPath = "http://example.com/tutormatch";
+
+// how many hours do students and tutors have to respond before they get added
+// to the call list?
+$unresponded_match_call_time=72;
+
+// configures how soon matches have to be before they _always_ show up in the
+// call list, even if students and tutors haven't had enough chance to respond (in hours
+$quick_match_call_time=24;
+?>
