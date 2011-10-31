@@ -1,0 +1,7 @@
+To install:
+
+Setup a mysql database and mysql username.
+
+Copy config.php.sample to config.php, and edit as needed.
+
+Upload to a php-enabled webserver.
